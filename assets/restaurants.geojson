@@ -1,0 +1,65 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Restaurant A",
+        "cuisine": "Ethiopian",
+        "featured": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2348, 47.3809]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Restaurant B",
+        "cuisine": "Mexican",
+        "featured": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2390, 47.3840]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Restaurant C",
+        "cuisine": "Vietnamese",
+        "featured": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2290, 47.3775]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Restaurant D",
+        "cuisine": "American",
+        "featured": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2420, 47.3860]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Restaurant E",
+        "cuisine": "Dessert",
+        "featured": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2310, 47.3890]
+      }
+    }
+  ]
+}
