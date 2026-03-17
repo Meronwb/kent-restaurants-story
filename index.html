@@ -1,96 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exploring Food Culture in Kent, Washington</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exploring Food Culture in Kent, Washington</title>
 
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" />
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&display=swap" />
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-    <section id="cover">
-        <div id="intro">
-            <h1>Exploring Food Culture in Kent, Washington</h1>
-            <h5>A GeoNarrative of restaurants, cuisine, and community</h5>
-            <p>
-                This project explores the restaurant landscape in Kent, Washington through an
-                online geo-narrative. By combining maps, images, and text, the project shows
-                how restaurants reflect cultural diversity, local identity, and patterns of
-                access across the city.
-            </p>
+  <section id="cover">
+    <div id="intro">
+      <h1>Exploring Food Culture in Kent, Washington</h1>
+      <h5>A GeoNarrative of restaurants, cuisine, and community</h5>
+      <p>
+        This project explores the restaurant landscape in Kent, Washington
+        through maps, images, and text. It highlights cuisine diversity,
+        restaurant clustering, and the relationship between food and place.
+      </p>
 
-            <div class="footnote">
-                <span>Created by Meron Birhanu | University of Washington</span>
-            </div>
-        </div>
-    </section>
+      <div class="footnote">
+        <span>Created by Meron Birhanu | University of Washington</span>
+      </div>
+    </div>
+  </section>
 
-    <section id="geonarrative">
-        <div id="storyboard">
-            <div id="map"></div>
-        </div>
+  <section id="geonarrative">
+    <div id="storyboard">
+      <div id="map"></div>
+    </div>
 
-        <article class="scene" data-scene="0">
-            <h2>Scene 1: Food and Place in Kent</h2>
-            <p>
-                Kent is home to a growing and diverse food scene. Restaurants across the city
-                provide not only meals, but also spaces where culture, community, and everyday
-                life come together. This story begins with an overview of Kent and the
-                restaurant locations included in this project.
-            </p>
-        </article>
+    <article class="scene" data-scene="0">
+      <h2>STEP 1: Food and Place in Kent</h2>
+      <p>
+        Kent is home to a growing and diverse food scene. Restaurants across
+        the city provide not only meals, but also spaces where culture,
+        community, and everyday life come together.
+      </p>
+    </article>
 
-        <article class="scene" data-scene="1">
-            <h2>Scene 2: Diversity of Cuisine</h2>
-            <p>
-                Restaurants in Kent represent a range of cuisines and food traditions. Mapping
-                these locations helps show how the city’s food landscape reflects cultural
-                diversity and the presence of different communities.
-            </p>
-            <img src="img/restaurant1.jpg" alt="Restaurant food in Kent">
-        </article>
+    <article class="scene" data-scene="1">
+      <h2>STEP 2: Diversity of Cuisine</h2>
+      <p>
+        Restaurants in Kent represent a range of cuisines and food traditions.
+        Mapping these locations helps show how the city’s food landscape
+        reflects cultural diversity.
+      </p>
+    </article>
 
-        <article class="scene" data-scene="2">
-            <h2>Scene 3: Restaurant Clusters and Access</h2>
-            <p>
-                Restaurant locations are not evenly distributed throughout Kent. Many are found
-                near major roads, shopping centers, and commercial corridors. These patterns
-                suggest that development and transportation play an important role in shaping
-                where food access is concentrated.
-            </p>
-        </article>
+    <article class="scene" data-scene="2">
+      <h2>STEP 3: Restaurant Clusters and Access</h2>
+      <p>
+        Restaurant locations are not evenly distributed throughout Kent. Many
+        are found near major roads, shopping centers, and commercial corridors.
+      </p>
+    </article>
 
-        <article class="scene" data-scene="3">
-            <h2>Scene 4: Featured Places</h2>
-            <p>
-                A few restaurants stand out because of their atmosphere, cuisine, or personal
-                importance. These featured places add a more personal perspective to the map
-                and help connect geography with lived experience.
-            </p>
-            <img src="img/restaurant2.jpg" alt="Featured restaurant in Kent">
-        </article>
-    </section>
+    <article class="scene" data-scene="3">
+      <div class="scene-content">
+        <h2>STEP 4: Featured Places</h2>
+        <p>
+          A few restaurants stand out because of their atmosphere, cuisine, or
+          personal meaning. These featured places add a more personal layer to
+          the map story.
+        </p>
+      </div>
+    </article>
 
-    <section id="footer">
-        <div class="container py-4">
-            <h4>Project Information</h4>
-            <p>GEOG 458 Lab 07 | Map-based Storytelling Project</p>
-            <p>
-                Data sources: Restaurant locations collected from online map sources and
-                converted into GeoJSON for mapping.
-            </p>
-        </div>
-    </section>
+    <article class="scene" data-scene="4">
+      <h2>STEP 5: Image</h2>
+      <img src="img/restaurant1.jpg" alt="Restaurant in Kent">
+    </article>
+  </section>
 
-    <script src="https://unpkg.com/scrollama"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+  <section id="footer">
+    <div class="container py-5">
+      <h4>Project Information</h4>
+      <p>GEOG 458 Lab 07 | Map-based Storytelling Project</p>
+      <p>Data sources: Restaurant locations collected from online map sources and converted into GeoJSON for mapping.</p>
+      <p>Built with Mapbox GL JS, Scrollama, and Bootstrap.</p>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/scrollama"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
