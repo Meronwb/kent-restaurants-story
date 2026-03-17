@@ -1,4 +1,4 @@
-mapboxgl.accessToken = 'YOUR_MAPBOX_ACCESS_TOKEN';
+mapboxgl.accessToken = 'pk.eyJ1IjoibWVyb253YiIsImEiOiJjbWt5eXZtZmIwZTRiM2RuM2NmMW51NTJsIn0.Ed7Mtil9vLyQb-7MMOBfiQ';
 
 let map;
 let scriptPanel = scrollama();
@@ -10,7 +10,7 @@ const allRestaurantsLayer = {
   source: 'restaurants-src',
   paint: {
     'circle-radius': 6,
-    'circle-color': '#e63946',
+    'circle-color': '#d62828',
     'circle-stroke-width': 1,
     'circle-stroke-color': '#ffffff'
   }
@@ -143,7 +143,7 @@ function handleSceneEnter(response) {
     map.flyTo({
       center: [-122.234, 47.382],
       zoom: 12.5,
-      pitch: 25,
+      pitch: 35,
       speed: 0.5
     });
 
@@ -151,21 +151,26 @@ function handleSceneEnter(response) {
       map.addLayer(featuredLayer);
     }
   }
+
+  else if (index === 4) {
+    map.flyTo({
+      center: [-122.239, 47.384],
+      zoom: 13,
+      pitch: 0,
+      speed: 0.5
+    });
+  }
 }
 
 function handleSceneExit(response) {
   const index = response.index;
 
-  if (index === 0) {
-    if (response.direction === 'up') {
-      document.getElementById('cover').style.visibility = 'visible';
-    }
+  if (index === 0 && response.direction === 'up') {
+    document.getElementById('cover').style.visibility = 'visible';
   }
 
-  else if (index === 3) {
-    if (map.getLayer('restaurants-featured')) {
-      map.removeLayer('restaurants-featured');
-    }
+  if (index === 3 && map.getLayer('restaurants-featured')) {
+    map.removeLayer('restaurants-featured');
   }
 }
 
