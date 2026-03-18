@@ -59,12 +59,11 @@ function adjustStoryboardSize() {
 
 function initializeMap() {
   map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/light-v10',
-    center: [-122.2348, 47.3809],
-    zoom: 10,
-    pitch: 0
-  });
+  container: 'map',
+  style: 'mapbox://styles/mapbox/dark-v10',
+  center: [-122.2348, 47.3809],
+  zoom: 10
+});
 
   map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 }
@@ -96,15 +95,29 @@ async function geojsonFetch() {
 }
 
 function handleSceneEnter(response) {
-  const index = response.index;
+  var index = response.index;
 
   if (index === 0) {
     map.flyTo({
       center: [-122.2348, 47.3809],
-      zoom: 10,
-      pitch: 0,
-      speed: 0.5
+      zoom: 10
     });
+  }
+
+  if (index === 1) {
+    map.flyTo({
+      center: [-122.2348, 47.3809],
+      zoom: 12
+    });
+  }
+
+  if (index === 2) {
+    map.flyTo({
+      center: [-122.2400, 47.3700],
+      zoom: 14
+    });
+  }
+}
 
     if (!map.getLayer('restaurants-all')) {
       map.addLayer(allRestaurantsLayer);
