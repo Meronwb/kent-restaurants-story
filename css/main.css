@@ -1,8 +1,28 @@
-html,
-body {
+html, body {
   margin: 0;
-  padding: 0;
   font-family: 'Fira Sans', sans-serif;
+}
+
+#cover {
+  height: 100vh;
+  background: url('../img/cover.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro {
+  color: white;
+  background: rgba(0,0,0,0.6);
+  padding: 2rem;
+  text-align: center;
+}
+
+#storyboard {
+  position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 #map {
@@ -10,147 +30,19 @@ body {
   height: 100%;
 }
 
-#cover {
-  width: 100%;
-  height: 100vh;
-  background: url('../img/cover.jpg') no-repeat center center;
-  background-size: cover;
-  position: relative;
-}
-
-#intro {
-  position: relative;
-  top: 32%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-32%);
-  width: 50%;
-  color: #fff;
-  padding: 2rem;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.35);
-  text-shadow: 0 0 3px rgba(0, 0, 0, .95);
-}
-
-#intro .footnote {
-  text-align: right;
-}
-
-#intro .footnote span {
-  position: relative;
-  bottom: -0.5rem;
-  color: #fff;
-  font-style: italic;
-  font-size: small;
-}
-
-#geonarrative {
-  position: relative;
-}
-
-#storyboard {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-}
-
-#map {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .scene {
-  position: relative;
-  max-width: 40rem;
-  margin: 0 auto 0 4rem;
-  padding: 2rem 0;
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.10);
-  z-index: 2;
-}
-
-.scene:first-child {
-  margin-top: -30%;
-}
-
-.scene:last-child {
-  margin-bottom: 0;
-  padding-bottom: 4rem;
-}
-
-.scene h2 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: white;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.95);
-}
-
-.scene p {
-  margin: 0 1rem 1rem 1rem;
+  max-width: 400px;
+  margin: 50vh auto;
+  background: rgba(255,255,255,0.9);
   padding: 1rem;
-  color: black;
-  background: rgba(255, 255, 255, 0.82);
-  border-radius: 6px;
-  text-shadow: 0 0 6px white;
-}
-
-.scene img {
-  display: block;
-  margin: 2rem auto 0 auto;
-  width: 90%;
-  border: 5px solid white;
-}
-
-/* this is the dramatic full-image scene like the class template */
-[data-scene="3"] {
-  background: url('../img/background.jpg') no-repeat center center;
-  background-size: cover;
-  margin: 0 auto 0 auto !important;
-  height: 100vh !important;
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-[data-scene="3"] .scene-content {
-  max-width: 40rem;
-  margin-left: 4rem;
-}
-
-[data-scene="3"] p {
-  background: rgba(255, 255, 255, 0.82);
+  border-radius: 10px;
 }
 
 #footer {
-  width: 100%;
-  min-height: 30vh;
+  height: 30vh;
+  background: black;
   color: white;
-  background-color: rgba(0, 0, 0, 0.75);
-}
-
-#footer h4,
-#footer p {
-  color: white;
-}
-
-@media (max-width: 768px) {
-  #intro {
-    width: 80%;
-  }
-
-  .scene {
-    margin: 0 auto;
-    max-width: 90%;
-  }
-
-  .scene:first-child {
-    margin-top: 0;
-  }
-
-  [data-scene="3"] .scene-content {
-    margin: 0 auto;
-    max-width: 90%;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
