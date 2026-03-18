@@ -33,19 +33,6 @@ html, body {
   height: 100vh;
 }
 
-.scene {
-  min-height: 100vh; 
-  max-width: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  background: rgba(255,255,255,0.9);
-  padding: 2rem;
-  border-radius: 10px;
-}
-
 #footer {
   height: 30vh;
   background: black;
@@ -56,23 +43,37 @@ html, body {
 }
 
 .text-box {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
 }
 
 .text-header {
-  background: #333;
-  color: white;
-  padding: 0.8rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  background: #333 !important;
+  color: white !important;
+  padding: 0.9rem 1rem !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.03em !important;
 }
 
 .text-box p {
-  padding: 1rem;
-  margin: 0;
-  color: black;
+  margin: 0 !important;
+  padding: 1rem !important;
+  color: black !important;
+  background: transparent !important;
+  text-shadow: none !important;
 }
 
+.scene {
+  min-height: 100vh;
+  max-width: 420px;
+  margin-left: 4rem;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
