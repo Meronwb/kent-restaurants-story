@@ -98,21 +98,18 @@ function handleSceneEnter(response) {
   var index = response.index;
 
   if (index === 0) {
-    map.flyTo({
       center: [-122.2348, 47.3809],
       zoom: 10
     });
   }
 
   if (index === 1) {
-    map.flyTo({
       center: [-122.2348, 47.3809],
       zoom: 12
     });
   }
 
   if (index === 2) {
-    map.flyTo({
       center: [-122.2400, 47.3700],
       zoom: 14
     });
@@ -127,7 +124,6 @@ function handleSceneEnter(response) {
   }
 
   else if (index === 1) {
-    map.flyTo({
       center: [-122.2348, 47.3809],
       zoom: 11,
       pitch: 0,
@@ -144,7 +140,6 @@ function handleSceneEnter(response) {
   }
 
   else if (index === 2) {
-    map.flyTo({
       center: [-122.225, 47.39],
       zoom: 12,
       pitch: 20,
@@ -153,7 +148,6 @@ function handleSceneEnter(response) {
   }
 
   else if (index === 3) {
-    map.flyTo({
       center: [-122.234, 47.382],
       zoom: 12.5,
       pitch: 35,
@@ -166,7 +160,6 @@ function handleSceneEnter(response) {
   }
 
   else if (index === 4) {
-    map.flyTo({
       center: [-122.239, 47.384],
       zoom: 13,
       pitch: 0,
