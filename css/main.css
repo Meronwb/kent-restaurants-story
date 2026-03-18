@@ -17,6 +17,18 @@ html, body {
   background: rgba(0,0,0,0.6);
   padding: 2rem;
   text-align: center;
+  border-radius: 8px;
+}
+
+#geonarrative {
+  position: relative;
+}
+
+#storyboard {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
 }
 
 #map {
@@ -27,10 +39,43 @@ html, body {
   height: 100%;
 }
 
-#storyboard {
-  position: sticky;
-  top: 0;
-  height: 100vh;
+.scene {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  max-width: 420px;
+  margin-left: 4rem;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  padding: 0;
+}
+
+.text-box {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.text-header {
+  background: #333;
+  color: white;
+  padding: 0.9rem 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.text-box p {
+  margin: 0;
+  padding: 1rem;
+  color: black;
+  background: transparent;
+  text-shadow: none;
+  line-height: 1.6;
 }
 
 #footer {
@@ -40,40 +85,4 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.text-box {
-  background: rgba(255, 255, 255, 0.92) !important;
-  border-radius: 6px !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3) !important;
-}
-
-.text-header {
-  background: #333 !important;
-  color: white !important;
-  padding: 0.9rem 1rem !important;
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  letter-spacing: 0.03em !important;
-}
-
-.text-box p {
-  margin: 0 !important;
-  padding: 1rem !important;
-  color: black !important;
-  background: transparent !important;
-  text-shadow: none !important;
-}
-
-.scene {
-  min-height: 100vh;
-  max-width: 420px;
-  margin-left: 4rem;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-  background: transparent !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
 }
