@@ -4,61 +4,73 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Restaurant A",
+        "name": "Cushitic Cuisine",
         "cuisine": "Ethiopian",
         "featured": "yes"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-122.2348, 47.3809]
+        "coordinates": [-122.234, 47.380]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Restaurant B",
+        "name": "Medina Cafe and Grill",
+        "cuisine": "Somali",
+        "featured": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.235, 47.388]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Juba Restaurant",
+        "cuisine": "Somali",
+        "featured": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.236, 47.386]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hong Kong Market",
+        "cuisine": "Asian Grocery",
+        "featured": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.240, 47.390]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "El Rinconsito",
         "cuisine": "Mexican",
         "featured": "no"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-122.2390, 47.3840]
+        "coordinates": [-122.238, 47.385]
       }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Restaurant C",
+        "name": "Pho Bac Kent",
         "cuisine": "Vietnamese",
         "featured": "no"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-122.2290, 47.3775]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Restaurant D",
-        "cuisine": "American",
-        "featured": "yes"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-122.2420, 47.3860]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Restaurant E",
-        "cuisine": "Dessert",
-        "featured": "no"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-122.2310, 47.3890]
+        "coordinates": [-122.239, 47.387]
       }
     }
   ]
